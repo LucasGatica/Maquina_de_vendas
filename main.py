@@ -1,8 +1,12 @@
 import menu
+from maquina import MaquinaDeVendas
+
 
 if __name__ == '__main__':
-    menu.inicializa()
-    menu.mostrar_menu()
+
+    maquina = MaquinaDeVendas(menu.inicializa())
+
+    menu.mostrar_menu(maquina)
 
 
 
